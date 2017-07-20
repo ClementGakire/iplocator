@@ -13,10 +13,10 @@ function ip_locator() {
 					alert("Please enter your ip address.");
 					return;
 			}
-            if (chk == 'f'){
+            /*if (chk == 'f'){
                 alert("please wait. the system is still doing some background work");
                 return;
-            }
+            }*/
 			if (navigator.onLine) {
 				
 				var xhttp = new XMLHttpRequest();
