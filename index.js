@@ -58,4 +58,5 @@ function inform() {
     var $app_start = document.getElementById("app_start");
     $app_start.style.color = 'green';
     $app_start.textContent= "Ready.....";
-    chk = 't
+    chk = 't';
+}
