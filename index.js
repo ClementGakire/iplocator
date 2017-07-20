@@ -16,10 +16,7 @@ function ip_locator() {
 				xhttp.onreadystatechange = function() {
 					if (this.readyState == 4 && this.status == 200) {
 						var ip_info = JSON.parse(xhttp.responseText);
-						if (ip_info.status == "success")
-							document.getElementById("ip_view").innerHTML = ip_info.city + "/" + ip_info.country ;
-						else 
-							document.getElementById("ip_view").innerHTML = "invalid ip address.";
+						document.getElementById("ip_view").innerHTML = ip_info.city + "/" + ip_info.country;
 					}
 					else {
 						document.getElementById("ip_view").innerHTML = "Loading.......";
