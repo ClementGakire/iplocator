@@ -34,7 +34,7 @@ function ip_locator() {
                             document.getElementById("ip_view").innerHTML = ip_info.city + "/" + ip_info.country_name ;
                         }
                         map = new google.maps.Map(document.getElementById('googleMap'), {
-                            center: {lat: Integer.parseInt(ip_info.latitude),lng:Integer.parseInt(ip_info.longitude)},
+                            center: {lat: ip_info.latitude, lng:ip_info.longitude},
                             zoom: 5
                         });
 					}
@@ -58,5 +58,4 @@ function inform() {
     var $app_start = document.getElementById("app_start");
     $app_start.style.color = 'green';
     $app_start.textContent= "Ready.....";
-    chk = 't';
-}
+    chk = 't
