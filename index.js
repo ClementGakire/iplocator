@@ -35,7 +35,7 @@ function ip_locator() {
                         }
                         map = new google.maps.Map(document.getElementById('googleMap'), {
                             center: {lat: ip_info.latitude, lng:ip_info.longitude},
-                            zoom: 5
+                            zoom: 9
                         });
 					}
 					else {
