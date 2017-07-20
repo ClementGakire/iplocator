@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title>IP LOCATOR</title>
         <link rel="stylesheet" href="style.css">
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAagE5L6qMTYNZpZo4Pd_Q5pS9vaKy42eA&callback=inform"></script>
 	</head>
 	<body>
 		<div id="app_start"></div>
@@ -14,7 +15,9 @@
 		<button onclick="ip_locator()" id="btn">Search</button>
 		
 		<h2>Find Your Location Below.</h2>
-		<div id="ip_view"></div>
+        <div id="ip_view"></div>
+        <div id="googleMap" style="width:500px; height:500px">map goes here.</div>
 		<script src="index.js"></script>
+        
 	</body>
 </html>
