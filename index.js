@@ -25,7 +25,7 @@ function ip_locator() {
 						document.getElementById("ip_view").innerHTML = "Loading.......";
 					}
 				};
-				 xhttp.open("GET", "http://www.ip-api.com/json/"+ip.value, true);
+				 xhttp.open("GET", "https://ipapi.co/"+ip.value+"/json/", true);
                 xhttp.timeout= 6000;
                 xhttp.ontimeout = function (e) {
                     document.getElementById("ip_view").innerHTML = "failed to obtain ip address";
